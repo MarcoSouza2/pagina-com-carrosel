@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.carousel-container{
+    width: 500px;
+    margin: 20px auto;
+}
+
+.carousel{
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide{
+    min-width: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#slide1:checked ~ .carousel .slides{
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel .slides{
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel .slides{
+    transform: translateX(-200%);
+}
+
+.navigation{
+    margin-top: 10px;
+}
+
+.navigation label{
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.form-container{
+    background: white;
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mensagem-sucesso{
+    margin-top:10px;
+    color:green;
+    font-weight:bold;
+}
