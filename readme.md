@@ -1,1 +1,2 @@
-Mudança feita por meio de estudo para teste de conflitos
+projeto feito com 
+hml , css e javascript
